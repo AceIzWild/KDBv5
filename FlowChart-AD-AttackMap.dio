@@ -1,0 +1,400 @@
+<mxfile host="65bd71144e">
+    <diagram id="8ZDkOZxjIo5987FU1LKY" name="Page-1">
+        <mxGraphModel dx="3187" dy="1512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="6000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="67" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="2" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;AD Attack Map&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#006100;strokeColor=#005700;fontColor=#ffffff;shadow=1;glass=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="1126" y="30" width="259" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;fontSize=20;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1236" y="491" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;External&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;Expploit vulnerabiliy via public-facing services&lt;br&gt;&lt;br&gt;Enumerate and find Active Directory domain&lt;br&gt;&lt;br&gt;Exploit vulnerability on domain-joined host" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="791" y="206" width="274" height="274" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;fontSize=20;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1276" y="491" as="targetPoint"/>
+                        <mxPoint x="1466" y="401" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Internal&amp;nbsp;&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;/span&gt;LLMNR | NBNS Poisoning&amp;nbsp;&lt;br&gt;&lt;br&gt;SMB Relay&lt;br&gt;&lt;br&gt;IPv6 DNS Spoofing&lt;br&gt;&lt;br&gt;ARP Poisoning&lt;/font&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+                    <mxGeometry x="1430.94" y="220" width="260" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="13" target="15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Foothold on &lt;br&gt;Domain-joined Host&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="1187.5" y="480" width="115" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="15" target="20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="15" target="23">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;b&gt;Current user privilege level?&lt;br&gt;&lt;br&gt;Need to elevate privilege?&lt;br&gt;&lt;/b&gt;Some enumeration steps require elevated privileges on the compromised host&lt;br&gt;&lt;br&gt;&lt;b&gt;Any endpoint defenses (AV/EDR)?&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="1065" y="616" width="360" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;div&gt;Windows PrivEsc QRG's&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;HackTricks&lt;/span&gt;&lt;/div&gt;&lt;div&gt;PayloadsAllTheThings&lt;/div&gt;&lt;div&gt;My Checklist from TryHackMe&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontColor=#ffffff;fillColor=#0050ef;strokeColor=#001DBC;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="1505" y="601" width="150" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="23" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="23" target="27">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;b&gt;Enumerate all other domain workstations, servers, and controllers&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;Tool Examples:&lt;br&gt;&lt;/b&gt;&lt;br&gt;ldapdomaindump, ldapserach, enum4linux, crackmapexec, adidnsdump, PowerView" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;fillColor=#e3c800;strokeColor=#B09500;" vertex="1" parent="1">
+                    <mxGeometry x="1010" y="766" width="470" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;b&gt;Microsoft Office DCOM Lateral Pivot&lt;/b&gt;&lt;br&gt;&lt;br&gt;If Microsoft Office&amp;nbsp;installed on the compromised host, you have admin on the compromised host, and the lateral target has MS Office installed.&lt;br&gt;&lt;br&gt;Best used on workstations where MS Office more likely to be installed." style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="705" y="686" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="27" target="30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="27" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;b&gt;Enumerate domain policies&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;Tool Examples:&lt;br&gt;&lt;/b&gt;&lt;br&gt;crackmapexec, PowerView, ldapdomaindump, enum4linux&lt;br&gt;&lt;br&gt;&lt;b&gt;Add workstations to domain?&lt;br&gt;&lt;/b&gt;ms-DS-MachineAccountQuota?&lt;br&gt;&lt;br&gt;&lt;b&gt;Account lockouts?&lt;/b&gt;&lt;br&gt;- Lockout threshold&lt;br&gt;- Lockout observation window&lt;br&gt;&lt;br&gt;&lt;b&gt;Password complexity?&lt;/b&gt;&lt;br&gt;&lt;br&gt;Determine authentication scheme&lt;br&gt;&lt;br&gt;&lt;b&gt;Kerberos? (NTLM Fallback)?&lt;br&gt;NTLM? &lt;/b&gt;(pass the hash)" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontColor=#000000;fillColor=#e3c800;strokeColor=#B09500;" vertex="1" parent="1">
+                    <mxGeometry x="1085" y="896" width="320" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;b&gt;Can we add computers to the domain?&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;Computer Accounts &lt;/b&gt;can inherit permissions from groups in the same way users can.&lt;br&gt;&lt;br&gt;&lt;b&gt;Can&amp;nbsp;use scripts to join computers to the domain with known user&amp;nbsp;credentials. &lt;br&gt;&lt;br&gt;The computer account gets a username and password like a&amp;nbsp;user.&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Tool example: &lt;/b&gt;impacket-addcomputer&lt;br&gt;&lt;br&gt;Username ends with a &lt;b&gt;$&amp;nbsp;&lt;/b&gt;Plus what ever password you used to join&lt;br&gt;&lt;br&gt;Can then use tools like &lt;b&gt;crackmapexec&lt;/b&gt;&amp;nbsp;with the computer account credentials to determine misconfigured inherited privileges" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="1455" y="901" width="310" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;entryX=0.976;entryY=0.997;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="32" target="35">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=none;html=1;entryX=1.003;entryY=0.054;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;fontColor=#000000;" edge="1" parent="1" target="37">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="945" y="1331" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="" style="edgeStyle=none;html=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="32" target="42">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;b&gt;Enumerate domain users and groups&lt;br&gt;&lt;/b&gt;&lt;br&gt;Define high-value groups and their members&lt;br&gt;&lt;br&gt;Watch out for nested groups&lt;br&gt;&lt;br&gt;&lt;b&gt;Tool Examples&lt;/b&gt;&lt;br&gt;&lt;br&gt;net.exe, powershell, Bloodhound, GetADUsers.py, ldapdomaindump, ldapsearch, crackmapexec, enum4linux" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;fillColor=#e3c800;strokeColor=#B09500;" vertex="1" parent="1">
+                    <mxGeometry x="945" y="1256" width="600" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Enumerate DCSync Privileges&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;DS-Replication-Get-Changes&lt;br&gt;DS-Replication-Get-Changes-All&lt;br&gt;DS-Replication-Get-Changes-In-Filtered-Set&lt;br&gt;&lt;/b&gt;&lt;br&gt;These three domain permissions will allow a user to dump hashes from a domain controller&lt;br&gt;&lt;br&gt;&lt;b&gt;Tool examples:&lt;br&gt;&lt;/b&gt;&lt;br&gt;mimikatz, secretsdump.py&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="495" y="1106" width="350" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="37" target="59">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="665" y="1596" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="&lt;b&gt;Enumerate Service Principal Names&lt;br&gt;&lt;/b&gt;&lt;br&gt;SPNs are mapped in Domain &lt;br&gt;Controllers with the IP or hostname where the service account is &lt;br&gt;running. Can expose some attack surfaces early on without the need for &lt;br&gt;port scanning.&lt;br&gt;&lt;br&gt;&lt;b&gt;Often misconfigured with unneeded domain privileges or cleartext passwords in account descriptions.&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="495" y="1356" width="350" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="edgeStyle=none;html=1;fontSize=15;fontColor=#000000;" edge="1" parent="1" source="42" target="47">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;b&gt;Enumerate Certificate Templates&lt;br&gt;&lt;/b&gt;&lt;br&gt;If a certificate template has these three attributes set:&lt;br&gt;&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;b&gt;msPKI-Certificate-Name-Flag: ENROLLEE_SUPPLIES_SUBJECT&lt;/b&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;b&gt;PkiExtendedKeyUsage: Client Authentication&lt;/b&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Enrollment Rights: NT Authority\Auhenticated Users&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;It could be used to impersonate &lt;b&gt;any user &lt;/b&gt;(even domain admins)&lt;br&gt;&lt;br&gt;&lt;b&gt;Tool Examples:&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;div style=&quot;display: inline-block; line-height: 1.2; pointer-events: all; overflow-wrap: normal;&quot;&gt;certify.exe, rubeus&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;fillColor=#e3c800;strokeColor=#B09500;" vertex="1" parent="1">
+                    <mxGeometry x="1025" y="1446" width="440" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="edgeStyle=none;html=1;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="47" target="50">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="&lt;b&gt;Using enumeration of users and groups:&lt;br&gt;&lt;/b&gt;&lt;br&gt;Identify currently logged-on users on compromised host&lt;br&gt;&lt;br&gt;Determine&amp;nbsp;if high-value users are logged on. &lt;br&gt;&lt;br&gt;May be able to dump high-value&amp;nbsp;passwords or hashes from memory and pass them around the network." style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;fontSize=15;fontColor=#000000;fillColor=#e3c800;strokeColor=#B09500;" vertex="1" parent="1">
+                    <mxGeometry x="1025" y="1726" width="440" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=none;html=1;fontSize=14;fontColor=#000000;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="50" target="53">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1247" y="2226" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="50" target="69">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;b&gt;Lateral Movement / Pivoting&lt;br&gt;&lt;/b&gt;&lt;br&gt;Hash / Ticket / Credential Discovery" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;" vertex="1" parent="1">
+                    <mxGeometry x="1059.06" y="1976" width="371.88" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;exitX=1;exitY=0.444;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="53" target="56">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="53" target="58">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1527" y="2186" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="73" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="53" target="57">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&lt;b&gt;Pass the Password &lt;br&gt;&lt;/b&gt;&lt;br&gt;Interactive Logon&lt;br&gt;&lt;br&gt;-SMB&lt;br&gt;- RDP&lt;br&gt;- WinRM&lt;br&gt;- SSH&lt;br&gt;-&amp;nbsp;Etc." style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;fontSize=14;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;" vertex="1" parent="1">
+                    <mxGeometry x="1347" y="2106" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="56" target="75">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;b&gt;Cleartext Password Discovery&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;WDigest&lt;/b&gt;&lt;br&gt;Tool Example:&amp;nbsp;Mimikatz&lt;br&gt;&lt;br&gt;&lt;b&gt;Credential Mining&lt;br&gt;&lt;/b&gt;Tool example: PowerShell, CLI tools" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fontSize=14;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;" vertex="1" parent="1">
+                    <mxGeometry x="1611" y="1790" width="270" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="57" target="75">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="&lt;div&gt;&lt;b&gt;Low and Slow Password Spraying&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;See domain lockout policy&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Plenty of PowerShell Scripts online to facilitate this with a wordlist&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Tool example: crackmapexec, PowerShell&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fontSize=14;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;" vertex="1" parent="1">
+                    <mxGeometry x="1596" y="2043" width="300" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="58" target="75">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;b&gt;Dump hashes and crack locally&lt;br&gt;&lt;/b&gt;&lt;br&gt;Tool examples&amp;nbsp;&lt;br&gt;&lt;br&gt;secretsdump.py, crackmapexec" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fontSize=14;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;" vertex="1" parent="1">
+                    <mxGeometry x="1631" y="2360" width="230" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;b&gt;Kerberoasting&lt;br&gt;&lt;/b&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Request a TGS ticket and attempt to crack the SPN's hash in order to authenticate as the service principal and abuse any misconfigurations associated with the service principal.&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;b style=&quot;font-size: 12px;&quot;&gt;Tool example:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;GetUserSPNs.py&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fontSize=14;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;" vertex="1" parent="1">
+                    <mxGeometry x="485" y="1596" width="370" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="69" target="71">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="&lt;b&gt;Hash | Ticket Passing&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;fontSize=14;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;" vertex="1" parent="1">
+                    <mxGeometry x="1155" y="2200" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="71" target="81">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="71" target="83">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Authentication Protocol?&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;fontSize=25;fontColor=#000000;fillColor=#fa6800;strokeColor=#C73500;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="1035" y="2604" width="420" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="Whose password do we have?" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;shadow=0;glass=0;sketch=0;fontSize=14;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" vertex="1" parent="1">
+                    <mxGeometry x="1976" y="2088" width="210" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="" style="shape=link;html=1;fontSize=14;fontColor=#000000;" edge="1" parent="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="2086" y="2690" as="sourcePoint"/>
+                        <mxPoint x="2086" y="2298" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" value="" style="endArrow=classic;html=1;fontSize=14;fontColor=#000000;" edge="1" parent="1" target="71">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2090" y="2689" as="sourcePoint"/>
+                        <mxPoint x="1640" y="2651" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="84" value="" style="edgeStyle=none;html=1;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="81" target="82">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="" style="edgeStyle=none;html=1;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="81" target="90">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="81" target="92">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="&lt;b&gt;Kerberos&lt;br&gt;&lt;/b&gt;&lt;br&gt;Use FQDM" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;shadow=0;glass=0;sketch=0;fontSize=14;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="906" y="2870" width="149" height="149" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="" style="edgeStyle=none;html=1;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="82" target="83">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="&lt;div&gt;&lt;b&gt;Is NTLM Enabled?&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;If you use an IP address while Kerberos is enabled, it will fallback to NTLM authentication.&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;shadow=0;glass=0;sketch=0;fontSize=14;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1161" y="2870" width="149" height="149" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="" style="edgeStyle=none;html=1;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="83" target="86">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="83" target="92">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="&lt;div&gt;NTLM&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Use IP addresses&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;shadow=0;glass=0;sketch=0;fontSize=14;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="2870" width="149" height="149" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Dumping User Hashes&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Who's logged on?&lt;/b&gt;&lt;/span&gt;&lt;b&gt;&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;Domain admin? &lt;br&gt;&lt;br&gt;Other privileged user?&lt;br&gt;&lt;br&gt;Can we pivot using unprivileged access?&lt;br&gt;&lt;br style=&quot;&quot;&gt;Can we dump anything from memory?&lt;br style=&quot;&quot;&gt;&lt;br&gt;Tool example: Mimikatz&lt;br&gt;&lt;br&gt;See also:&amp;nbsp;&lt;a href=&quot;https://notes.benheater.com/books/active-directory/page/dumping-lsass-without-mimikatz&quot;&gt;Dumping LSASS without Mimikatz&lt;/a&gt;&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;NTLM hashes?&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;What's available on disk?&lt;br&gt;&lt;br&gt;Tool example: PowerShell, reg save&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;NTLM hashes in SAM?&lt;br&gt;&lt;br&gt;NTLM hashes from registry dump?&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;shadow=0;glass=0;sketch=0;fontSize=14;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1716" y="2720" width="460" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Kerberos authenticates, does not authorize&lt;br&gt;&lt;/b&gt;&lt;br&gt;It&lt;br&gt; is easy for an attacker to request and forge tickets with the Kerberos &lt;br&gt;authentication protocol, because Kerberos does not check if the user has&lt;br&gt; authorization&amp;nbsp;to the resource; only if the credentials are correct.&lt;br&gt;&lt;br&gt;Who's logged on?&lt;br&gt;&lt;br&gt;Domain admin? Other privileged user?&lt;br&gt;Can we pivot using unprivileged access?&lt;br&gt;&lt;br&gt;Can we dump anything from memory?&lt;br&gt;&lt;br&gt;Dumping Tickets&lt;br&gt;&lt;br&gt;Tool example: Mimikatz, Rubeus&lt;br&gt;&lt;br&gt;Cached TGT? (Renewable?)&lt;br&gt;Cached TGS?&lt;br&gt;NTLM Hash? (Pass the ticket)&lt;br&gt;&lt;br&gt;Dumping Hashes&lt;br&gt;&lt;br&gt;Tool example: Mimikatz,&amp;nbsp;PowerShell, reg save&lt;br&gt;See also:&amp;nbsp;&lt;a href=&quot;https://notes.benheater.com/books/active-directory/page/dumping-lsass-without-mimikatz&quot;&gt;Dumping LSASS without Mimikatz&lt;/a&gt;&lt;br&gt;&lt;br&gt;NTLM hashes in SAM?&lt;br&gt;NTLM hashes from registry dump?&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;shadow=0;glass=0;sketch=0;fontSize=14;fillColor=#f0a30a;strokeColor=#BD7000;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="315" y="2685" width="530" height="530" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="92" target="96">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="92" target="97">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="92" target="98">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="92" target="99">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="92" target="100">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="92" target="101">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="&lt;div&gt;Lateral Movement Tools &amp;amp; Techniques&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;I've made a best effort to summarize and list some common lateral movement tools and techniques here.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Googling by their respective names will help you learn more about them and find similar or alternative techniques and tools.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="995.5" y="3240" width="520" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="96" target="108">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="96" target="110">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="96" target="114">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="&lt;div&gt;&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;Un/Constrained Delegation&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;Allows a computer account access a service on behalf of another account.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;Unconstrained&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;The computer account can delegate access to any service for any account&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;Constrained&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;The computer account can delegate access for specific users to specific services using a specified protocol.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#647687;strokeColor=#314354;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="642" y="3530" width="170" height="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="97" target="114">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Active Directory Certificate Services (ADCS)&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you've managed to find a vulnerable certificate template, you can request a TGT as &lt;b&gt;any user&lt;/b&gt; (even domain admin) using a tool such as &lt;b&gt;rubeus&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Armed with the TGT, you could feasibly access administrative shares and resources on remote computers as a privileged user.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#647687;strokeColor=#314354;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="862" y="3530" width="170" height="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="98" target="114">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;AS-REP Roasting&lt;/b&gt;&lt;br&gt;&lt;br&gt;Can use &lt;b&gt;GetNPUsers.py &lt;/b&gt;to enumerate accounts where AS-REP is disabled.&amp;nbsp;&lt;br&gt;&lt;br&gt;Normally, a user must supply a pre-authentication hash of a timestamp which is validated by the DC.&lt;br&gt;&lt;br&gt;When disabled, we can&amp;nbsp; freely request a TGT for those accounts and attempt to crack the hash.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#647687;strokeColor=#314354;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="1072" y="3530" width="170" height="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=16;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="99" target="114">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1260" y="4190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="99" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Overpass the Hash&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;Can create a TGT using a NTLM hash&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;With the TGT handy, can spawn a command prompt in the context of the user&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;Can now interact with remote hosts as this user (eg psexec)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;Command execution requires admin&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#647687;strokeColor=#314354;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="1278" y="3530" width="170" height="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="100" target="114">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Pass the Ticket&lt;br&gt;&lt;/b&gt;&lt;br&gt;Have a password or NTLM hash for a computer account or a SPN?&lt;br&gt;&lt;br&gt;Can use mimikatz&amp;nbsp;or ticketer.py&amp;nbsp;to create a silver ticket (TGS) and forge elevated permissions on the target.&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#647687;strokeColor=#314354;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="1485" y="3530" width="170" height="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="101" target="114">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;More Tools:&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;WMI Exec&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;WinRM&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;wmiexec.py&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;smbexec.py&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;psexec.py&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;CrackMapExec&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;PTH (Pass the Hash)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;pth-winexe&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#647687;strokeColor=#314354;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="1688" y="3530" width="170" height="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="" style="edgeStyle=none;html=1;fontSize=16;fontColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="108" target="138">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Constrained Delegation&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;Abusing this scenario requires:&lt;br&gt;&lt;/b&gt;&lt;br&gt;Admin control of the system assigned constrained delegation&lt;br&gt;&lt;br&gt;Enumerate delegated access (msDS-allowedToDeleagteto) and figure out &lt;b&gt;who can access what&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Grab TGT from the delegated host.&lt;br&gt;&lt;br&gt;Use TGT to request a TGS with S4U to request delegated access to the resource&lt;br&gt;&lt;br&gt;Load the TGS into memory and access the service.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#6d8764;strokeColor=#3A5431;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="210" y="3400" width="270" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="110" target="114">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="&lt;div&gt;&lt;b style=&quot;color: rgb(0, 0, 0);&quot;&gt;Unconstrained Delegation&lt;br&gt;&lt;/b&gt;&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;b style=&quot;color: rgb(0, 0, 0);&quot;&gt;Abusing this scenario requires:&lt;br&gt;&lt;/b&gt;&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Admin control of the system assigned unconstrained delegation&lt;/span&gt;&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Set up bait and have a domain admin or DC connect to the bait (eg UNC share)&lt;/span&gt;&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Dump the TGT from the system&lt;/span&gt;&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Use the TGT to impersonate the admin, since this machine has unconstrained, delegated access to any service&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#6d8764;strokeColor=#3A5431;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="215" y="4030" width="270" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="114" target="122">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="114" target="123">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;Whose:&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Ticket |&amp;nbsp;Hash |&amp;nbsp;Credential | Privileges&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;do we have?&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#76608a;strokeColor=#432D57;" vertex="1" parent="1">
+                    <mxGeometry x="1090.25" y="4256" width="309.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="" style="edgeStyle=none;html=1;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="122" target="126">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="Unprivileged user&lt;br&gt;&lt;br&gt;Semi-privileged user&lt;br&gt;&lt;br&gt;Local admin (NTLM)" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#FF6666;strokeColor=#314354;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="560" y="4440" width="170" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="123" target="124">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="&lt;b&gt;Member of Domain Admins&lt;/b&gt;&lt;br&gt;&lt;br&gt;We own the domain and can access any domain-joined host" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="1224" y="4414" width="195" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=20;fontColor=#FFFFFF;" edge="1" parent="1" source="124" target="143">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="&lt;b&gt;RDP&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you've cracked the hash, could login to the domain controller as the domain admin, or try &lt;b&gt;xfreerdp &lt;/b&gt;with the &lt;b&gt;/pth&lt;/b&gt;&amp;nbsp;option.&lt;br&gt;&lt;br&gt;&lt;b&gt;Hash / Ticket&lt;/b&gt;&lt;br&gt;&lt;br&gt;Can &lt;b&gt;pass the hash / ticket&lt;/b&gt;&amp;nbsp;to the domain controller, or try command execution using SMB, WinRM, WMI, PsExec, etc to gain access to the domain controller" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="1466" y="4400" width="570.5" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="" style="edgeStyle=none;html=1;fontSize=16;fontColor=#FFFFFF;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="126" target="130">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="126" target="131">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="126" target="136">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="What's the next hop?" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#FF6666;strokeColor=#314354;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="560" y="4630" width="170" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="&lt;b&gt;Unprivileged Domain User&lt;br&gt;&lt;/b&gt;&lt;br&gt;-&amp;nbsp;Interactive Login&lt;br&gt;&amp;nbsp;Can we use a credential to RDP / SSH into another domain-joined host, escalate privilege and enumerate some more?&lt;br&gt;&lt;br&gt;- User Hash / Ticket&lt;br&gt;You can try passing atacks&amp;nbsp;with&lt;br&gt;Impacket / CrackMapExec and see if anything sticks.&lt;br&gt;&lt;br&gt;Usually requires&amp;nbsp;admin account to successfully get a shell with pass the hash attacks.&lt;br&gt;&lt;br&gt;Unprivileged user may have some localized administration privileges on specific hosts.&lt;br&gt;&lt;br&gt;Can you crack the hash?&lt;br&gt;&lt;br&gt;Use interactive logon or CrackMapExec to see where you can logon with the credential.&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#FFFFFF;fillColor=#ff6666;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="4880" width="210" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" value="&lt;b&gt;Semi-privileged Domain User&lt;br&gt;&lt;/b&gt;&lt;br&gt;- Privilege Level&lt;br&gt;The&lt;br&gt;user may not be an outright domain admin, but may have certain group&lt;br&gt;memberships or domain privileges that allow us to further pivot to other&lt;br&gt;interesting resources.&lt;br&gt;&lt;br&gt;-&amp;nbsp;Interactive Login&lt;br&gt;&amp;nbsp;Can we use a credential to RDP / SSH into another domain-joined host, escalate privilege and enumerate some more?&lt;br&gt;&lt;br&gt;- User Hash / Ticket&lt;br&gt;Given the user's restricted privileges, it may be worth trying to pass the hash / ticket around the domain with CrackMapExec and see what sticks&lt;br&gt;&lt;br&gt;Can you crack the hash? Use interactive logon or CrackMapExec to see where you can logon with the credential." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#FFFFFF;fillColor=#ff6666;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="4880" width="210" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="PIVOT AND ENUMERATE MORE" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#FFFFFF;fillColor=#ff6666;" vertex="1" parent="1">
+                    <mxGeometry x="315" y="5610" width="660" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="Local (non-domain) System Admin&lt;br&gt;&lt;br&gt;-&amp;nbsp;Repeated Credential&lt;br&gt;&amp;nbsp;Can&lt;br&gt; we use a credential to RDP / SSH into another host, as the local admin?&lt;br&gt; Many organizations use the same credentials when imaging computers to &lt;br&gt;save time and automate deployment. &lt;br&gt;&lt;br&gt;Being local admin will make it far easier to enumerate and dump information on any additional hosts.&lt;br&gt;&lt;br&gt;- User Hash&lt;br&gt;You can try passing the hash with CrackMapExec (don't specify a domain) and see if anything sticks.&lt;br&gt;&lt;br&gt;Can you crack the hash? Use interactive logon or CrackMapExec to see where you can logon with the credential.&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#FFFFFF;fillColor=#ff6666;" vertex="1" parent="1">
+                    <mxGeometry x="785.5" y="4880" width="210" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Determine escalation path from next hop&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#6d8764;strokeColor=#3A5431;fontStyle=0;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="3890" width="90" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="143" target="145">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="156" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="143" target="150">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="143" target="152">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="158" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;fontColor=#FFFFFF;" edge="1" parent="1" source="143" target="153">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Active Directory Persistence&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" vertex="1" parent="1">
+                    <mxGeometry x="1617.75" y="4670" width="269" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" value="&lt;div style=&quot;display: inline-block; line-height: 1.2; pointer-events: all; overflow-wrap: normal;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Multiple Persistence Methods&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;https://adsecurity.org/?p=1714&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" vertex="1" parent="1">
+                    <mxGeometry x="2023" y="4620" width="184" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" value="" style="edgeStyle=none;html=1;fontSize=14;fontColor=#FFFFFF;" edge="1" parent="1" source="146" target="147">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="146" value="&lt;span class=&quot;comments-comment-item__main-content feed-shared-main-content--comment t-14 t-black t-normal&quot;&gt;&lt;span dir=&quot;ltr&quot;&gt;show me some love?&lt;br&gt;&lt;/span&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;sketch=0;fontSize=14;fontColor=#000000;fillColor=#e3c800;strokeColor=#B09500;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="30" width="230" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="147" value="YES?&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;a data-test-app-aware-link=&quot;&quot; href=&quot;http://patreon.com/user?u=87430788&quot; target=&quot;_self&quot; class=&quot;app-aware-link&quot;&gt;patreon.com/user?u=87430788&lt;/a&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=14;fillColor=#232B20;strokeColor=#3A5431;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="113.75" width="220" height="62.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="&lt;div style=&quot;display: inline-block; line-height: 1.2; pointer-events: all; overflow-wrap: normal;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;Golden Ticket&lt;/b&gt;&lt;br&gt;&lt;br&gt;Once the domain controller has been owned, we can access the &lt;b&gt;krbtgt &lt;/b&gt;hash and create crafted TGTs&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" vertex="1" parent="1">
+                    <mxGeometry x="2023" y="4820" width="184" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" value="&lt;div style=&quot;display: inline-block; line-height: 1.2; pointer-events: all; overflow-wrap: normal;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b&gt;Dump User Hashes&lt;br&gt;&lt;/b&gt;&lt;br&gt;NTDS.dit file&lt;br&gt;Mimikatz dump&lt;br&gt;Mimikatz DC Sync&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" vertex="1" parent="1">
+                    <mxGeometry x="2030" y="5020" width="184" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="152" value="&lt;div style=&quot;display: inline-block; line-height: 1.2; pointer-events: all; overflow-wrap: normal;&quot;&gt;&lt;div style=&quot;display: inline-block; line-height: 1.2; pointer-events: all; overflow-wrap: normal;&quot;&gt;&lt;b&gt;AdminSDHolder&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;https://pentestlab.blog/2022/01/04/domain-persistence-adminsdholder/&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" vertex="1" parent="1">
+                    <mxGeometry x="1957" y="5220" width="330" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="&lt;div style=&quot;display: inline-block; line-height: 1.2; pointer-events: all; overflow-wrap: normal;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;div style=&quot;display: inline-block; line-height: 1.2; pointer-events: all; font-weight: bold; overflow-wrap: normal;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Computer Accounts&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;b&gt;&lt;br&gt;&lt;br&gt;https://www.hackingarticles.in/domain-persistence-computer-accounts/&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" vertex="1" parent="1">
+                    <mxGeometry x="1930" y="5500" width="370" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" value="DONE SON !" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" vertex="1" parent="1">
+                    <mxGeometry x="1869.75" y="5720" width="504.5" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="162" value="Inspired by:&amp;nbsp;&lt;br&gt;&lt;br&gt;https://benheater.com/active-directory-attack-map/" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;shadow=0;glass=0;sketch=0;fontSize=16;fontColor=#FFFFFF;fillColor=#232B20;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="320" width="430.25" height="117" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
